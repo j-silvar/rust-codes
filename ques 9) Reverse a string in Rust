@@ -1,0 +1,16 @@
+fn reverse_string(input: &str) -> String {
+    let mut result = String::new();
+
+    for ch in input.chars().rev() {
+        result.push(ch);
+    }
+
+    result
+}
+
+fn main() {
+    let original = "hello";
+    let reversed = reverse_string(original);
+    println!("Original: {}", original);
+    println!("Reversed: {}", reversed);
+}
